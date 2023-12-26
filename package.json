@@ -10,7 +10,9 @@
     "build:asns": "bun build --external game --external arena --outfile dist/asns/main.mjs src/asns/main.ts",
     "build:bcnc": "bun build --external game --external arena --outfile dist/bcnc/main.mjs src/bcnc/main.ts",
     "build:acnc": "bun build --external game --external arena --outfile dist/acnc/main.mjs src/acnc/main.ts",
-    "lint": "bun biome lint src/"
+    "lint": "bun biome lint src/",
+    "fmt": "bun biome format src/",
+    "check": "bun biome check src/"
   },
   "devDependencies": {
     "@biomejs/biome": "^1.4.1",
