@@ -11,7 +11,7 @@ initializeLog()
 const logger = getLogger('main')
 
 export function loop() {
-  // biome-ignore lint/style/noNonNullAssertion: <explanation>
+  // biome-ignore lint/style/noNonNullAssertion: which is game rule!
   const enemyFlag = getObjectsByPrototype(Flag).find(object => !object.my)!
   const myCreeps = getObjectsByPrototype(Creep).filter(object => object.my)
   for (const creep of myCreeps) {
