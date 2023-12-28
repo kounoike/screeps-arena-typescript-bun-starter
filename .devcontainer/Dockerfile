@@ -2,8 +2,6 @@ ARG VARIANT=latest
 FROM oven/bun:${VARIANT}
 
 ENV DEBIAN_FRONTEND=noninteractive
-ENV ZIG_VERSION=0.11.0
-ENV ZLS_VERSION=0.11.0
 RUN apt-get update \
   && apt-get -y install --no-install-recommends \
   ca-certificates \
