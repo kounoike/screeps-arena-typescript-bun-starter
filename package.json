@@ -3,7 +3,7 @@
   "module": "main.ts",
   "type": "module",
   "scripts": {
-    "build": "bun run build:*",
+    "build": "bun build --external game --external arena --outdir ./dist --root ./src --entry-naming '[dir]/[name].mjs' src/{a,b}{ctf,sns,cnc}/main.ts",
     "build:bctf": "bun build --external game --external arena --outfile dist/bctf/main.mjs src/bctf/main.ts",
     "build:actf": "bun build --external game --external arena --outfile dist/actf/main.mjs src/actf/main.ts",
     "build:bsns": "bun build --external game --external arena --outfile dist/bsns/main.mjs src/bsns/main.ts",
