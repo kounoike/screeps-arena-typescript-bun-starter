@@ -1,4 +1,4 @@
-import { Flag } from 'arena/season_alpha/capture_the_flag/basic'
+import { Flag } from 'arena/season_beta/capture_the_flag/basic/prototypes'
 import { Creep } from 'game/prototypes'
 import { getObjectsByPrototype } from 'game/utils'
 import { getLogger } from 'loglevel'

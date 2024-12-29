@@ -1,10 +1,9 @@
+import type { CreepMoveResult } from 'game/constants'
 import type { FindPathOptions  } from 'game/path-finder'
 import type { Position } from 'game/prototypes'
 
-export type CreepMoveReturnCodeLike = 0 | -1 | -4 | -11 | -12
-
 export interface CreepLike {
-  moveTo(target: Position, opts?: FindPathOptions): CreepMoveReturnCodeLike | -2 | -7 | undefined
+  moveTo(target: Position, opts?: FindPathOptions): CreepMoveResult
 }
 export interface FlagLike {
   x: number
