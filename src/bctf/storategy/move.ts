@@ -1,5 +1,5 @@
 import type { CreepMoveResult } from 'game/constants'
-import type { FindPathOptions  } from 'game/path-finder'
+import type { FindPathOptions } from 'game/path-finder'
 import type { Position } from 'game/prototypes'
 
 export interface CreepLike {

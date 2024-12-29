@@ -4,12 +4,7 @@
   "type": "module",
   "scripts": {
     "build": "bun build --external game --external arena --outdir ./dist --root ./src --entry-naming '[dir]/[name].mjs' src/{a,b}{ctf,sns,cnc}/main.ts",
-    "build:bctf": "bun build --external game --external arena --outfile dist/bctf/main.mjs src/bctf/main.ts",
-    "build:actf": "bun build --external game --external arena --outfile dist/actf/main.mjs src/actf/main.ts",
-    "build:bsns": "bun build --external game --external arena --outfile dist/bsns/main.mjs src/bsns/main.ts",
-    "build:asns": "bun build --external game --external arena --outfile dist/asns/main.mjs src/asns/main.ts",
-    "build:bcnc": "bun build --external game --external arena --outfile dist/bcnc/main.mjs src/bcnc/main.ts",
-    "build:acnc": "bun build --external game --external arena --outfile dist/acnc/main.mjs src/acnc/main.ts",
+    "build:watch": "bun build --external game --external arena --outdir ./dist --root ./src --entry-naming '[dir]/[name].mjs' --watch src/{a,b}{ctf,sns,cnc}/main.ts",
     "lint": "bun biome lint src/",
     "fmt": "bun biome format src/",
     "check": "bun biome check src/"
@@ -17,13 +12,13 @@
   "devDependencies": {
     "@biomejs/biome": "^1.9.4",
     "@types/bun": "latest",
-    "@types/lodash": "^4.17.13"
+    "@types/lodash": "^4.17.13",
+    "@types/screeps-arena": "screepers/typed-screeps-arena#season-beta"
   },
   "peerDependencies": {
     "typescript": "^5.3.3"
   },
   "dependencies": {
-    "@types/screeps-arena": "screepers/typed-screeps-arena#season-beta",
     "ansi-styles": "^6.2.1",
     "lodash": "^4.17.21",
     "loglevel": "^1.9.2",

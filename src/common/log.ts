@@ -46,7 +46,9 @@ export function initializeLog() {
       const cpuTime = getCpuTime()
       const timeString = logTimeFormatter(cpuTime)
 
-      if (cpuTime < previousLogTime) previousLogTime = 0
+      if (cpuTime < previousLogTime) {
+        previousLogTime = 0
+      }
       const duration = cpuTime - previousLogTime
       const timeStyle = duration > 1_000_000 ? ansiStyles.magenta : ansiStyles.gray
       previousLogTime = cpuTime

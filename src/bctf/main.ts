@@ -2,9 +2,9 @@ import { Flag } from 'arena/season_beta/capture_the_flag/basic/prototypes'
 import { Creep } from 'game/prototypes'
 import { getObjectsByPrototype } from 'game/utils'
 import { getLogger } from 'loglevel'
-import { initializeLog } from '../common/log'
-import { myAwesomeLogic } from '../common/sample'
-import { moveStoratagy } from './storategy/move'
+import { initializeLog } from '../common/log.ts'
+import { myAwesomeLogic } from '../common/sample.ts'
+import { moveStoratagy } from './storategy/move.ts'
 
 initializeLog()
 
