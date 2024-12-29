@@ -6,6 +6,12 @@ import { getLogger } from 'loglevel'
 const logger = getLogger('main')
 
 export function loop() {
+  // logger sample
+  logger.debug('loop start')
+  logger.info('info log')
+  logger.warn('warn log')
+  logger.error('error log')
+
   const enemyFlag = getObjectsByPrototype(Flag).find(object => !object.my)
   if (!enemyFlag) {
     logger.error('enemy flag not found')
