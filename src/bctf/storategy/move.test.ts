@@ -1,10 +1,10 @@
 import { expect, mock, test } from 'bun:test'
-import type { MoveToOpts } from 'game/path-finder'
-import type { RoomPosition } from 'game/prototypes'
+import type { FindPathOptions } from 'game/path-finder'
+import type { Position } from 'game/prototypes'
 import { moveStoratagy } from './move'
 
 test('moveStoratagy', () => {
-  const moveTo = mock((_target: RoomPosition, _opts?: MoveToOpts): 0 => 0)
+  const moveTo = mock((_target: Position, _opts?: FindPathOptions): 0 => 0)
   const creep = { moveTo }
   const flag = { x: 1, y: 1 }
   moveStoratagy(creep, flag)
