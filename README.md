@@ -13,15 +13,14 @@ bun install
 To build:
 
 ```bash
-bun build:bctf
+bun run build
 ```
 
-- bctf: basic Capture the Flag
-- actf: advanced Capture the Flag
-- bsns: basic Spawn and Swamp
-- asns: advanced Spawn and Swamp
-- bcnc: basic Collect and Control
-- acnc: advanced Collect and Control
+or watch changes:
+
+```bash
+bun run build:watch
+```
 
 To lint:
 

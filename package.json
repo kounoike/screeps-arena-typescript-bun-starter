@@ -3,8 +3,8 @@
   "module": "main.ts",
   "type": "module",
   "scripts": {
-    "build": "bun build --external game --external arena --outdir ./dist --root ./src --entry-naming '[dir]/[name].mjs' src/{a,b}{ctf,sns,cnc}/main.ts",
-    "build:watch": "bun build --external game --external arena --outdir ./dist --root ./src --entry-naming '[dir]/[name].mjs' --watch src/{a,b}{ctf,sns,cnc}/main.ts",
+    "build": "bun build --external game --external arena --outdir ./dist --root ./src --entry-naming '[dir]/[name]/main.mjs' src/{a,b}{ctf,sns,cnc}/*-main.ts",
+    "build:watch": "bun build --external game --external arena --outdir ./dist --root ./src --entry-naming '[dir]/[name]/main.mjs' --watch src/{a,b}{ctf,sns,cnc}/*-main.ts",
     "lint": "bun biome lint src/",
     "fmt": "bun biome format src/",
     "check": "bun biome check src/"
